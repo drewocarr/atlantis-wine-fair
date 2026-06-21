@@ -131,7 +131,9 @@ p {
 
 .hero-intro {
   max-width: 860px;
+  margin-inline: auto;
   color: var(--cream);
+  text-align: center;
 }
 
 .hero-intro h2 {
@@ -143,6 +145,7 @@ p {
 
 .hero-intro p:not(.micro-label) {
   max-width: 680px;
+  margin-inline: auto;
   margin-bottom: 0;
   font-size: clamp(1.05rem, 2vw, 1.45rem);
   line-height: 1.42;
@@ -157,6 +160,8 @@ p {
   flex-direction: column;
   gap: 0.8rem;
   max-width: min(100%, 720px);
+  margin-inline: auto;
+  width: min(100%, 720px);
 }
 
 .primary-action,
@@ -218,6 +223,7 @@ p {
 .visit-section,
 .contact-section {
   padding: clamp(4rem, 9vw, 8rem) var(--space);
+  text-align: center;
 }
 
 h2 {
@@ -237,23 +243,30 @@ h2 {
 
 .visit-copy {
   max-width: 1180px;
+  margin-inline: auto;
+}
+
+.visit-section .micro-label,
+.contact-section .micro-label {
+  margin-inline: auto;
 }
 
 .visit-copy h2 {
+  margin-inline: auto;
   margin-bottom: clamp(1rem, 2vw, 1.45rem);
 }
 
 .visit-image {
   width: min(100%, 980px);
   aspect-ratio: 4 / 3;
-  margin-bottom: clamp(1.5rem, 3.5vw, 2.75rem);
+  margin: 0 auto clamp(1.5rem, 3.5vw, 2.75rem);
   object-fit: cover;
   border: 2px solid rgba(247, 243, 216, 0.45);
 }
 
 .venue-note {
   max-width: 860px;
-  margin-bottom: clamp(1.8rem, 4vw, 3rem);
+  margin: 0 auto clamp(1.8rem, 4vw, 3rem);
   font-size: clamp(1.2rem, 2.2vw, 1.9rem);
   line-height: 1.32;
   color: var(--cream);
@@ -263,12 +276,13 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0;
-  margin: 0;
+  max-width: 860px;
+  margin: 0 auto;
   border-top: 1px solid rgba(247, 243, 216, 0.38);
 }
 
 .event-facts div {
-  padding: 1.2rem 1rem 1.2rem 0;
+  padding: 1.2rem 1rem;
   border-bottom: 1px solid rgba(247, 243, 216, 0.38);
 }
 
@@ -293,6 +307,7 @@ h2 {
 
 .contact-section h2 {
   max-width: 1040px;
+  margin-inline: auto;
   margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
 }
 
@@ -307,7 +322,7 @@ h2 {
 }
 
 .contact-mail:hover {
-  transform: translateX(0.18em);
+  transform: translateY(-0.08em);
 }
 
 @keyframes cue-pulse {

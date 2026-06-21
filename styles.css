@@ -138,7 +138,7 @@ p {
   max-width: 900px;
   margin-bottom: clamp(1.1rem, 2.5vw, 1.75rem);
   color: var(--cream);
-  font-size: clamp(2.4rem, 6.5vw, 7.2rem);
+  font-size: clamp(3rem, 8vw, 8.6rem);
 }
 
 .hero-intro p:not(.micro-label) {
@@ -146,6 +146,10 @@ p {
   margin-bottom: 0;
   font-size: clamp(1.05rem, 2vw, 1.45rem);
   line-height: 1.42;
+}
+
+.hero-intro p:not(.micro-label) + p:not(.micro-label) {
+  margin-top: 0.9rem;
 }
 
 .hero-actions {
